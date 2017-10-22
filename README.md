@@ -10,6 +10,11 @@ Or a group of faces
 ![](https://github.com/tomtillo/FaceDetection/blob/master/orig_image_631_local_input.jpg)
 
 
+## Understanding the order in which faces are detected
+The following gif image shows the order in which images are detected. ( From left to right and from top to bottom )
+
+![](https://github.com/tomtillo/FaceDetection/blob/master/cropped_group_face.gif)
+
 ## Detecting if the image is a closeup
 1. Compare the area occupied by the face in the image to that of the original image ( get the ratio or apply any other metric - like the height of face to height of image)
 2. Apply heuristics based on several training images - after manually classifying those training images  ( eg: use a multi-nomial logistic regression model to predict based on features like 
