@@ -1,23 +1,22 @@
-# Working with Viola Jones
-Feature extraction using Viola Jones Face detection Algorithm and OpenCV2
+# Feature extraction using Viola Jones Face detection Algorithm and OpenCV2
 
-Check out the wiki page for details and the latest updates on this project
+We can modify the Viola Jones Algorithm within a python script to scan for all the face-like portions of an image - 
 
-# Face Detection using Viola-Jones Algorithm and OpenCV2
+Whether it is a single face in an image 
 
-We can modify the Viola Jones Algorithm within a python script to scan for all the face-like portions of an image - Whether it is a single face in an image 
 ![](https://github.com/tomtillo/FaceDetection/blob/master/orig_image_24.jpg)
 
 Or a group of faces
-
-Order of face detection 
-
-
-Detecting if the image is a closeup
-1. Compare the sizes of the original Image and the area bound by face
+![](https://github.com/tomtillo/FaceDetection/blob/master/orig_image_631_local_input.jpg)
 
 
-2. Apply heuristics based on several training images - And manually classifying those training images 
+## Detecting if the image is a closeup
+1. Compare the area occupied by the face in the image to that of the original image ( get the ratio or apply any other metric - like the height of face to height of image)
+2. Apply heuristics based on several training images - after manually classifying those training images  ( eg: use a multi-nomial logistic regression model to predict based on features like 
+* height of area bound by face 
+* area of rectangle outlining the face 
+* height or area of original image
+* number of faces detected
 
 Challenges 
 1. Some faces do not get recognized ( see the image above - the face at the bottom right was not successfully detected )
