@@ -15,6 +15,8 @@ The following gif image shows the order in which images are detected. ( From lef
 
 ![](https://github.com/tomtillo/FaceDetection/blob/master/cropped_group_face.gif)
 
+But if you observe closely, there are some faces that are read after the first pass is done.
+
 ## Detecting if the image is a closeup
 1. Compare the area occupied by the face in the image to that of the original image ( get the ratio or apply any other metric - like the height of face to height of image)
 2. Apply heuristics based on several training images - after manually classifying those training images  ( eg: use a multi-nomial logistic regression model to predict based on features like 
