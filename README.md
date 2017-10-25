@@ -25,6 +25,9 @@ But if you observe closely, there are some faces that are read after the first p
 * height or area of original image
 * number of faces detected
 
-Challenges 
+### Challenges 
 1. Some faces do not get recognized ( see the image above - the face at the bottom right was not successfully detected )
 
+### References 
+Haar Cascades can be downloaded from here 
+https://github.com/opencv/opencv/tree/master/data/haarcascades
